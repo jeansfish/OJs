@@ -13,14 +13,14 @@ int main()
 		int n = 0;
 		scanf("%f %f", &X, &Y);
 		D = sqrtf(X*X + Y*Y);
-		while (D>Rs[n])
+		while (D > Rs[n])
 		{
 			n++;
 			if (n > max)
 			{
 				max++;
 				Rs[max] = sqrtf(50 * max * 2 / 3.141592653);
-				
+
 			}
 		}
 		printf("Property %d: This property will begin eroding in year %d.\n", i, n);
